@@ -14,8 +14,8 @@ const router = createBrowserRouter([{
     { path: '/products/:productId', element: <ProductDetail /> },
   ],
   errorElement: (
-    <div>
-      <h1>404: Page not found 🥵</h1>
+    <div className = "min-h-screen flex justify-center items-center">
+      <h1 className = "text-4xl">404: Page not found 🥵</h1>
       <Link to={'/'}>Back to Home</Link>
     </div>
   )
