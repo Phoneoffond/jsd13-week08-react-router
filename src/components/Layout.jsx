@@ -1,12 +1,14 @@
-import React from "react";
-import { Link, Outlet } from "react-router-dom";
-import Navbar from "./Navbar";
+import { Outlet } from 'react-router-dom';
+import Navbar from './Navbar'; 
 
-export const Layout = () => {
+
+export default function Layout() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen bg-slate-200">
       <Navbar />
-      <Outlet />
+      <main className="px-4 py-6 md:px-8 md:py-8 flex flex-col max-w-6xl mx-auto w-full flex-1">
+        <Outlet />
+      </main>
     </div>
   );
-};
+}

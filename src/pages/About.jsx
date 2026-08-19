@@ -1,11 +1,8 @@
 export default function About() {
   return (
-    <div className = "text-center">
-     <h1>About Us</h1>
-     <p>This is a simple example app demonstraing React Router 7.4.0</p>
+    <div className="text-center bg-white rounded-2xl md:rounded-4xl flex flex-col p-4 md:p-8">
+      <h1 className="text-2xl md:text-4xl font-bold mb-4">About Page</h1>
+      <p className="text-sm md:text-2xl text-gray-700">This is my first website.</p>
     </div>
-  )
-}
-
-
-
+  );
+} 
